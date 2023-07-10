@@ -1,23 +1,48 @@
-import logo from './logo.svg';
+
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+/* import Myapp from './components/Routing/Myapp'; */
+import MyApp from './DynamicRouting/MyApp';
+/* import Loginhandle from './components/conditional/Loginhandle'; */
+/* import UserLogged from './components/conditional/UserLogged'; */
+/* import User from './components/conditional/User'; */
+
+/* import Usecallback from './components/callback/Usecallback'; */
+/* import ParentComp from './components/codeevolution/ParentComp';
+ */
+/* import Usememo from './components/Usememo'; */
+/* import Counter from './components/Counter'; */
+/* import Fetchapi from './components/Fetchapi'; */
+//import Studentsdata from './components/Studentsdata';
+/* import Usereducerdemo from './components/Usereducerdemo';
+import UsestateDemo from './components/UsestateDemo'; */
+/* import UseReducer from './components/UseReducer';
+import UseState from './components/UseState'; */
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {/*  <UseState/>
+        <UseReducer/> */}
+        {/* <UsestateDemo/>
+        <Usereducerdemo/>
+        <Counter/> */}
+        {/* <Fetchapi/> */}
+       {/*  <Studentsdata/> */}
+      {/*  <Usememo/> */}
+      {/* <Usecallback/> */}
+      {/* <ParentComp/> */}
+      {/* <User/> */}
+      {/* <UserLogged/> */}
+      {/* <Loginhandle/> */}
+      {/* <BrowserRouter>
+      <Myapp/>
+      </BrowserRouter> */}
+      <BrowserRouter>
+          <MyApp/>
+      </BrowserRouter>
+     
+      
     </div>
   );
 }

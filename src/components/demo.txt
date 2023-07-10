@@ -1,0 +1,54 @@
+import React, { useReducer } from 'react'
+
+const UseReducer = () => {
+
+    const initialState = [{
+        name : "ReactJS",
+        email : "reactjs@gmail.com",
+        owner : "Facebook i.e. Meta",
+        version : 18
+    }];
+
+    const reducer = (state,action) =>{
+        
+        switch(action){
+            case 'change' : state.name = "Angular"
+                            state.email = "angular@gmail.com"
+                            state.owner = "Google"
+                            state.version = 18
+                return ({
+                    ...state,name : state.name,
+                    ...state,email : state.email,
+                    ...state,owner : state.owner,
+                    ...state,version : state.version
+                })              
+            default:
+                return state;
+        }
+    }
+    const [state,dispatch] = useReducer(reducer,initialState)
+
+  return (
+    <div>
+        <h1> I am UseReducer Component</h1>
+        <h2>
+            {
+                initialState.map(d=>{
+                    return(
+                        <div>
+                            Name : {d.name} <br/>
+                            Email : {d.email} <br/>
+                            Owner : {d.owner} <br/>
+                            Version : {d.version}
+                        </div>
+                    )
+                })
+            }
+        </h2>
+        <button onClick={()=>dispatch("change")}>Update</button>
+    </div>
+  )
+}
+
+export default UseReducer;
+ 

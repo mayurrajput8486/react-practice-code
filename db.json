@@ -1,0 +1,18 @@
+{
+  "students" : [
+    {
+      "id" : 101,
+      "name" : "Mahesh",
+      "email" : "mahesh@gmail.com",
+      "city" : "Pune",
+      "avatar" : "https://reqres.in/img/faces/8-image.jpg"
+  },
+  {
+    "id" : 102,
+    "name" : "Achal",
+    "email" : "achal@gmail.com",
+    "city" : "Pune",
+    "avatar":"https://reqres.in/img/faces/7-image.jpg"
+}
+  ]
+}
